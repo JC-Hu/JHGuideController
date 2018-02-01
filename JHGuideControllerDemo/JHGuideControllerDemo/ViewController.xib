@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController">
+            <connections>
+                <outlet property="testButton" destination="OE2-iV-5FF" id="dX7-w7-Ca7"/>
+                <outlet property="testButton2" destination="0vw-X7-711" id="gIa-JF-vw6"/>
+                <outlet property="testButton3" destination="gJG-Kh-kiv" id="fap-Sa-4xT"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="screenshot" translatesAutoresizingMaskIntoConstraints="NO" id="Lx6-ED-mma">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="isj-Qn-zLy">
+                    <rect key="frame" x="28" y="74" width="265" height="418"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OE2-iV-5FF">
+                            <rect key="frame" x="53" y="223" width="46" height="30"/>
+                            <color key="backgroundColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="Button"/>
+                            <connections>
+                                <action selector="testButtonAction:" destination="-1" eventType="touchUpInside" id="cae-v1-dtm"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0vw-X7-711">
+                            <rect key="frame" x="151" y="99" width="55" height="30"/>
+                            <color key="backgroundColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="Button2"/>
+                            <connections>
+                                <action selector="testButtonAction:" destination="-1" eventType="touchUpInside" id="obm-md-Shb"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gJG-Kh-kiv">
+                            <rect key="frame" x="120" y="331" width="55" height="30"/>
+                            <color key="backgroundColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="Button3"/>
+                            <connections>
+                                <action selector="testButtonAction:" destination="-1" eventType="touchUpInside" id="8jT-GY-Oqy"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.69615828314194073" green="0.64615183544411248" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="418" id="Er6-dV-DIg"/>
+                        <constraint firstAttribute="width" constant="265" id="Gbp-Jn-XHe"/>
+                        <constraint firstItem="gJG-Kh-kiv" firstAttribute="leading" secondItem="isj-Qn-zLy" secondAttribute="leading" constant="120" id="HDr-va-Cin"/>
+                        <constraint firstAttribute="bottom" secondItem="OE2-iV-5FF" secondAttribute="bottom" constant="165" id="Nqs-6B-Rc5"/>
+                        <constraint firstAttribute="bottom" secondItem="gJG-Kh-kiv" secondAttribute="bottom" constant="57" id="OlK-fe-Rj0"/>
+                        <constraint firstItem="OE2-iV-5FF" firstAttribute="leading" secondItem="isj-Qn-zLy" secondAttribute="leading" constant="53" id="g7i-QP-mU7"/>
+                        <constraint firstItem="0vw-X7-711" firstAttribute="top" secondItem="isj-Qn-zLy" secondAttribute="top" constant="99" id="ndY-Id-eil"/>
+                        <constraint firstItem="0vw-X7-711" firstAttribute="leading" secondItem="isj-Qn-zLy" secondAttribute="leading" constant="151" id="oQO-Uw-RDI"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Lx6-ED-mma" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="1RG-do-1Tb"/>
+                <constraint firstItem="Lx6-ED-mma" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="52r-oT-025"/>
+                <constraint firstItem="isj-Qn-zLy" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="28" id="Eeh-OA-1fO"/>
+                <constraint firstItem="isj-Qn-zLy" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="54" id="MRm-IY-ROF"/>
+                <constraint firstAttribute="trailing" secondItem="Lx6-ED-mma" secondAttribute="trailing" id="W6Q-X4-sd4"/>
+                <constraint firstAttribute="bottom" secondItem="Lx6-ED-mma" secondAttribute="bottom" id="heL-8z-Kq1"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="25.5" y="52.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="screenshot" width="375" height="667"/>
+    </resources>
+</document>

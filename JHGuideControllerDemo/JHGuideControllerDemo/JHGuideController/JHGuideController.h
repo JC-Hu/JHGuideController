@@ -29,4 +29,7 @@
 
 - (void)dismiss;
 
+// 点击高亮区域回调
+- (void)setTapBlock:(void (^)(UIView *snapshotView, CGRect rect))tapBlock;
+
 @end

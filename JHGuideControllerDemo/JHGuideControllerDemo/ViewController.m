@@ -42,6 +42,7 @@
     // show
     JHGuideController *guideController = [JHGuideController new];
     guideController.snapshotViewUpdates = YES;
+    
     //    [guideController showWithViewToSnapshot:self.testButton];
     //        [guideController showWithRectToHollow:self.testButton.frame];
     

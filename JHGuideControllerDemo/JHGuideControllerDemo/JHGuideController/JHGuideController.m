@@ -108,7 +108,7 @@
 {
     UIWindow *keyWindow = [[UIApplication sharedApplication] keyWindow];
     self.guideWindow = [[UIWindow alloc] initWithFrame:keyWindow.bounds];
-    self.guideWindow.windowLevel = UIWindowLevelStatusBar + 1;
+    self.guideWindow.windowLevel = UIWindowLevelAlert;
     self.guideWindow.rootViewController = self;
     
     [self.guideWindow makeKeyAndVisible];

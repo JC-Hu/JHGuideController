@@ -1,6 +1,7 @@
 # JHGuideController
 易用的半透明浮层操作引导，只需给出需要高亮的view或rect区域，支持多个高亮区域。
-Translucent guide window control, just needs views or rects to highlight. 
+
+Translucent guide window control.Just needs views or rects to highlight. 
 
 ## 效果图
 ![image](https://github.com/JC-Hu/JHGuideController/raw/master/GIF00.gif)

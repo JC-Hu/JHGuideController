@@ -12,8 +12,8 @@
 		9D91A18020234E98000D04ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D91A17F20234E98000D04ED /* Assets.xcassets */; };
 		9D91A18320234E98000D04ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D91A18120234E98000D04ED /* LaunchScreen.storyboard */; };
 		9D91A18620234E98000D04ED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D91A18520234E98000D04ED /* main.m */; };
-		9D91A18F20235005000D04ED /* JHGuideController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D91A18E20235005000D04ED /* JHGuideController.m */; };
 		9D91A1912023504D000D04ED /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D91A1902023504D000D04ED /* ViewController.xib */; };
+		9D91A1A0202475C8000D04ED /* JHGuideController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D91A19F202475C8000D04ED /* JHGuideController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,9 +26,9 @@
 		9D91A18220234E98000D04ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D91A18420234E98000D04ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D91A18520234E98000D04ED /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		9D91A18D20235005000D04ED /* JHGuideController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHGuideController.h; sourceTree = "<group>"; };
-		9D91A18E20235005000D04ED /* JHGuideController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHGuideController.m; sourceTree = "<group>"; };
 		9D91A1902023504D000D04ED /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		9D91A19E202475C8000D04ED /* JHGuideController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHGuideController.h; sourceTree = "<group>"; };
+		9D91A19F202475C8000D04ED /* JHGuideController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHGuideController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +61,7 @@
 		9D91A17520234E97000D04ED /* JHGuideControllerDemo */ = {
 			isa = PBXGroup;
 			children = (
-				9D91A18C20235005000D04ED /* JHGuideController */,
+				9D91A19D202475C8000D04ED /* JHGuideController */,
 				9D91A17620234E98000D04ED /* AppDelegate.h */,
 				9D91A17720234E98000D04ED /* AppDelegate.m */,
 				9D91A17920234E98000D04ED /* ViewController.h */,
@@ -75,13 +75,14 @@
 			path = JHGuideControllerDemo;
 			sourceTree = "<group>";
 		};
-		9D91A18C20235005000D04ED /* JHGuideController */ = {
+		9D91A19D202475C8000D04ED /* JHGuideController */ = {
 			isa = PBXGroup;
 			children = (
-				9D91A18D20235005000D04ED /* JHGuideController.h */,
-				9D91A18E20235005000D04ED /* JHGuideController.m */,
+				9D91A19E202475C8000D04ED /* JHGuideController.h */,
+				9D91A19F202475C8000D04ED /* JHGuideController.m */,
 			);
-			path = JHGuideController;
+			name = JHGuideController;
+			path = ../../src/JHGuideController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,7 +158,7 @@
 			files = (
 				9D91A17B20234E98000D04ED /* ViewController.m in Sources */,
 				9D91A18620234E98000D04ED /* main.m in Sources */,
-				9D91A18F20235005000D04ED /* JHGuideController.m in Sources */,
+				9D91A1A0202475C8000D04ED /* JHGuideController.m in Sources */,
 				9D91A17820234E98000D04ED /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

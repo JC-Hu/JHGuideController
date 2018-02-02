@@ -8,15 +8,15 @@ Translucent guide window control, just needs views or rects to highlight.
 ## 使用方法
 
 ```
-	JHGuideController *guideController = [JHGuideController new];
-    guideController.snapshotViewUpdates = YES;
-    
-    [guideController showWithViewsToSnapshot:@[view1, view2, view3]];
+// show
+JHGuideController *guideController = [JHGuideController new];
+guideController.snapshotViewUpdates = YES;
+[guideController showWithViewsToSnapshot:@[view1, view2, view3]];
 
-    // callback
-    [guideController setTapBlock:^(UIView *snapshotView, CGRect rect) {
-        // do something
-    }];
+// callback
+[guideController setTapBlock:^(UIView *snapshotView, CGRect rect) {
+    // do something
+}];
 ```
 
 详见Demo工程

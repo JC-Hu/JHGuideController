@@ -3,7 +3,7 @@
 Translucent guide window control, just needs views or rects to highlight. 
 
 ## 效果图
-![image](https://github.com/JC-Hu/JHGuideConroller/blob/master/GIF00.gif)
+![image](https://github.com/JC-Hu/JHGuideController/raw/master/GIF00.gif)
 
 ## 使用方法
 

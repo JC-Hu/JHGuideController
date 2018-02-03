@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -27,18 +26,8 @@
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                 </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="isj-Qn-zLy">
-                    <rect key="frame" x="28" y="74" width="265" height="418"/>
+                    <rect key="frame" x="28" y="54" width="265" height="418"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OE2-iV-5FF">
-                            <rect key="frame" x="53" y="219" width="54" height="34"/>
-                            <color key="backgroundColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <state key="normal" title="Button">
-                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </state>
-                            <connections>
-                                <action selector="testButtonAction:" destination="-1" eventType="touchUpInside" id="cae-v1-dtm"/>
-                            </connections>
-                        </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0vw-X7-711">
                             <rect key="frame" x="151" y="99" width="65" height="34"/>
                             <color key="backgroundColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -59,6 +48,16 @@
                                 <action selector="testButtonAction:" destination="-1" eventType="touchUpInside" id="8jT-GY-Oqy"/>
                             </connections>
                         </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OE2-iV-5FF">
+                            <rect key="frame" x="53" y="219" width="54" height="34"/>
+                            <color key="backgroundColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="Button">
+                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="testButtonAction:" destination="-1" eventType="touchUpInside" id="cae-v1-dtm"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" red="0.69615828314194073" green="0.64615183544411248" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
@@ -77,12 +76,11 @@
             <constraints>
                 <constraint firstItem="Lx6-ED-mma" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="1RG-do-1Tb"/>
                 <constraint firstItem="Lx6-ED-mma" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="52r-oT-025"/>
-                <constraint firstItem="isj-Qn-zLy" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="28" id="Eeh-OA-1fO"/>
-                <constraint firstItem="isj-Qn-zLy" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="54" id="MRm-IY-ROF"/>
+                <constraint firstItem="isj-Qn-zLy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="28" id="Eeh-OA-1fO"/>
+                <constraint firstItem="isj-Qn-zLy" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="54" id="MRm-IY-ROF"/>
                 <constraint firstAttribute="trailing" secondItem="Lx6-ED-mma" secondAttribute="trailing" id="W6Q-X4-sd4"/>
                 <constraint firstAttribute="bottom" secondItem="Lx6-ED-mma" secondAttribute="bottom" id="heL-8z-Kq1"/>
             </constraints>
-            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
             <point key="canvasLocation" x="25.5" y="52.5"/>
         </view>
     </objects>

@@ -69,14 +69,23 @@
 }
 
 // --
-
 // 通过镂空半透明浮层实现效果
+
+- (void)showWithViewsToHollow:(NSArray<__kindof UIView *> *)array
+{
+    NSMutableArray *tempArray = [NSMutableArray array];
+    for (UIView *view in array) {
+        [tempArray addObject:[self frameValueConvertWithTargetView:view]];
+    }
+    
+    [self showWithRectsToHollow:tempArray];
+}
+
 - (void)showWithRectToHollow:(CGRect)rect
 {
     [self showWithRectsToHollow:@[[NSValue valueWithCGRect:rect]]];
 }
 
-// 通过镂空半透明浮层实现效果
 - (void)showWithRectsToHollow:(NSArray <__kindof NSValue *>*)array
 {
     [self addWindow];
@@ -88,8 +97,12 @@
     for (NSValue *value in array) {
         
         CGRect rect = value.CGRectValue;
+        
+        // inset
+        rect = UIEdgeInsetsInsetRect(rect, self.hollowInsets);
+        
         // 抠出镂空区域
-        [bpath appendPath:[[UIBezierPath bezierPathWithRect:rect] bezierPathByReversingPath]];
+        [bpath appendPath:[[UIBezierPath bezierPathWithRoundedRect:rect byRoundingCorners:UIRectCornerAllCorners cornerRadii:CGSizeMake(self.hollowCornerRadius, self.hollowCornerRadius)] bezierPathByReversingPath]];
         
     }
     
@@ -102,6 +115,14 @@
     
     UITapGestureRecognizer *tapGR = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(backgroundTapAction:)];
     [self.backgoundView addGestureRecognizer:tapGR];
+}
+
+- (NSValue *)frameValueConvertWithTargetView:(UIView *)view
+{
+    
+    CGRect rect = [view convertRect:view.bounds toView:view.window];
+        
+    return [NSValue valueWithCGRect:rect];
 }
 
 - (void)addWindow
@@ -144,7 +165,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self.view addSubview:self.backgoundView];
+    [self.view insertSubview:self.backgoundView atIndex:0];
 }
 
 #pragma mark -
@@ -153,7 +174,7 @@
     if (!_backgoundView) {
         _backgoundView = [[UIView alloc] initWithFrame:self.view.bounds];
         _backgoundView.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight;
-        _backgoundView.backgroundColor = [UIColor colorWithWhite:0 alpha:.8];
+        _backgoundView.backgroundColor = [UIColor colorWithWhite:0 alpha:.7];
     }
     return _backgoundView;
 }
